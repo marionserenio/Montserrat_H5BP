@@ -1,0 +1,44 @@
+
+@font-face {
+	font-family: 'Conv_Monsterrat';
+	src: url('fonts/Monsterrat.eot');
+	src: url('fonts/Monsterrat.svg') format('svg'),
+	local('☺'), url('fonts/Monsterrat.woff') format('woff'), 
+	url('fonts/Monsterrat.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*Mixins*/
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+// Gradients
+#gradient {
+  .horizontal(@startColor: #555, @endColor: #333) {
+    background-color: @endColor;
+    background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+    background-image: linear-gradient(to right, @startColor, @endColor); // Standard, IE10
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",argb(@startColor),argb(@endColor))); // IE9 and down
+  }}
+
+  // Border Radius
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
