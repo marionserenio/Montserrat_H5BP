@@ -26,6 +26,7 @@
 <div class="header">
     <a href="#" class="deploy-left-sidebar"></a>
     <a href="#" class="top-logo"><img src="images/bfads-logo.png" class="replace-2x" width="125" alt="img"></a>
+    <a class="search-toggle" href="#"></a>
 </div>
 <div class="sidebar-left">
     <div class="sidebar-scroll-left">

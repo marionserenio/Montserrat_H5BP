@@ -1,6 +1,9 @@
 <?php require('header.php') ?>
 
 	<div class="content-box shadow">
+		<div class="SearchHeader toggle">
+			<input type="text">
+		</div>
 		<div class="SecondHeader">
 			<a class="back" href="javascript:history.back()"></a>
 			<h1>Black Friday Ads</h1>
