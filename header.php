@@ -14,9 +14,11 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/iphone.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link rel="stylesheet/less" type="text/css" href="style.less" />
         <script src="js/less-1.3.3.min.js" type="text/javascript"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
     </head>
     <body>
@@ -42,6 +44,7 @@
         <a href="#" class="nav-item hotdeals-nav">Hot Deals<em class="icon-page"></em></a>
         <a href="#" class="nav-item categories-nav">Categories<em class="icon-page"></em></a>   
         <a href="#" class="nav-item buyingguides-nav">Buying Guides<em class="icon-page"></em></a>   
+        <a href="#" class="nav-item user-nav">My Account Information<em class="icon-page"></em></a>   
         <a href="#" class="nav-item forums-nav">Forums<em class="icon-page"></em></a>   
         
         <div class="sidebar-decoration"></div>
